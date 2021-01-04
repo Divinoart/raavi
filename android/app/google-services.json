@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "955596151114",
+    "project_id": "raavi-64f80",
+    "storage_bucket": "raavi-64f80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955596151114:android:9d3b8a419ab743776549b3",
+        "android_client_info": {
+          "package_name": "app.raavi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955596151114-sn0dg7i3g90v0olka61v63mfe6dhh4sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1sBQxsTDC0h3YXOCmdyfKP7Krup1ZhuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955596151114-sn0dg7i3g90v0olka61v63mfe6dhh4sq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
