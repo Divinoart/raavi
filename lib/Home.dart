@@ -70,6 +70,7 @@ class _HomeState extends State<Home> {
 
     // TODO: implement initState
     super.initState();
+    Admob.requestTrackingAuthorization();
     bannerSize = AdmobBannerSize.BANNER;
     bannerSize2 = AdmobBannerSize.LARGE_BANNER;
     if (kShowAd) {
@@ -443,11 +444,11 @@ class _HomeState extends State<Home> {
                     },
                   ),
                 ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.white, // background
-                    onPrimary: const Color(0xff161920), // foreground
-                  ),
+                FlatButton(
+//                  style: ElevatedButton.styleFrom(
+//                    primary: Colors.white, // background
+//                    onPrimary: const Color(0xff161920), // foreground
+//                  ),
                   onPressed: (){
                     Navigator.of(context).pop();
                     if (Platform.isAndroid){
@@ -666,11 +667,11 @@ class _HomeState extends State<Home> {
                           children: [
                             Text('An error occurred trying to load podcasts\n'
                                 'You could try reloading the page', style: TextStyle(color: Colors.white), textAlign: TextAlign.center,),
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                primary: Colors.white, // background
-                                onPrimary: const Color(0xff161920), // foreground
-                              ),
+                            FlatButton(
+//                              style: ElevatedButton.styleFrom(
+//                                primary: Colors.white, // background
+//                                onPrimary: const Color(0xff161920), // foreground
+//                              ),
                               onPressed: (){
                                 setState(() {
                                   future = _getPodcast();
@@ -1224,7 +1225,7 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  AudioManager.instance.stop()
+                  AudioManager.instance.stop();
                 setState(() {
                   _title = '';
                 });
