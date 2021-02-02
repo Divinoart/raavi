@@ -5,6 +5,12 @@
 
     <!-- You can insert your own image assets here -->
     <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="@color/blue" />
+        </shape>
+    </item>
+    <item>
         <bitmap
             android:gravity="center"
             android:src="@drawable/raavi"/>

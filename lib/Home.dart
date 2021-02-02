@@ -933,7 +933,7 @@ class _HomeState extends State<Home> {
           child: Padding(
             padding: const EdgeInsets.all(4.0),
             child: ListTile(
-              leading: Icon(Icons.audiotrack, color: Colors.black,),
+              leading: Icon(Icons.menu_book_outlined, color: Colors.black,),
               title: Text(person.title.toString(), style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),),
 //              subtitle: Text(person.author.toString(), style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),),
               trailing: Container(
