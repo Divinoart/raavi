@@ -17,6 +17,7 @@ import 'package:raavi/firebase_analytics.dart';
 import 'package:raavi/pages/login.page.dart';
 import 'package:raavi/search_box.dart';
 import 'package:search_page/search_page.dart';
+import 'package:share/share.dart';
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -440,7 +441,7 @@ class _HomeState extends State<Home> {
 //                    constraints: BoxConstraints(maxHeight: 24, maxWidth: 24),
                     icon: Icon(Icons.share, size:20, color: Colors.white),
                     onPressed: () {
-
+                      Share.share('Get the Raavi audio book app https://raavi.page.link/RtQw', subject: 'Raavi audio book app');
                     },
                   ),
                 ),
@@ -474,9 +475,9 @@ class _HomeState extends State<Home> {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.exit_to_app),
+                      Icon(Icons.exit_to_app, color: Colors.white,),
                       SizedBox(width: 5.0,),
-                      const Text('Log Out'),
+                      const Text('Log Out', style: TextStyle(color: Colors.white),),
                     ],
                   ),
                 ),
@@ -680,9 +681,9 @@ class _HomeState extends State<Home> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Icon(Icons.exit_to_app),
+                                  Icon(Icons.refresh),
                                   SizedBox(width: 5.0,),
-                                  const Text('Reload'),
+                                  const Text('Reload', style: TextStyle(color: Colors.white),),
                                 ],
                               ),
                             ),
