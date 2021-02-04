@@ -872,7 +872,10 @@ class _HomeState extends State<Home> {
     showSearch(
       context: context,
       delegate: SearchPage(
+
         barTheme: ThemeData(
+          textTheme: TextTheme(title: TextStyle(color: Colors.white)),
+          primaryColorLight: Colors.white,
 
           inputDecorationTheme: InputDecorationTheme(
             fillColor: Colors.white,
@@ -881,7 +884,7 @@ class _HomeState extends State<Home> {
               fontSize: 15,
             ),
           ),
-          appBarTheme: AppBarTheme(textTheme: TextTheme(caption: TextStyle(color: Colors.white),), ),
+          // appBarTheme: AppBarTheme(textTheme: TextTheme(caption: TextStyle(color: Colors.white),), ),
           primaryColor: const Color(0xff202835),
         ),
 
