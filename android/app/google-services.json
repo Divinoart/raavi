@@ -29,10 +29,18 @@
             {
               "client_id": "955596151114-sn0dg7i3g90v0olka61v63mfe6dhh4sq.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "955596151114-2kicrngb419uhdrg73serm7q26on6pda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.raavi"
+              }
             }
           ]
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-1396258455588539~2849139983"
     }
   ],
   "configuration_version": "1"
