@@ -472,14 +472,14 @@ class _HomeState extends State<Home> {
                     }
 
                   },
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(Icons.exit_to_app, color: Colors.white,),
-                      SizedBox(width: 5.0,),
-                      const Text('Log Out', style: TextStyle(color: Colors.white),),
-                    ],
-                  ),
+                  // child: Row(
+                  //   mainAxisSize: MainAxisSize.min,
+                  //   children: [
+                  //     Icon(Icons.exit_to_app, color: Colors.white,),
+                  //     SizedBox(width: 5.0,),
+                  //     const Text('Log Out', style: TextStyle(color: Colors.white),),
+                  //   ],
+                  // ),
                 ),
               ],
             ),

@@ -190,7 +190,7 @@ class _MyAppState extends State<MyApp> {
 //        fontFamily: 'Montserrat',
         primarySwatch: Colors.grey,
       ),
-      home: _getLandingPage(),
+      home: Home(),
     );
   }
 
