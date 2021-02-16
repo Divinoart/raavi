@@ -158,6 +158,7 @@ class _HomeState extends State<Home> {
   _showBtmSheet(context){
     controller =
         _scaffoldKey.currentState
+        //todo:added periodic refresh
             .showBottomSheet<Null>((BuildContext context) {
          new Timer.periodic(Duration(seconds: 1), (Timer t) => controller.setState((){}));
           return new Stack(
