@@ -42,6 +42,7 @@ class _HomeState extends State<Home> {
   bool _loading = false;
   String _error;
   String _title = '';
+  String _img = '';
   num curIndex = 0;
   PlayMode playMode = AudioManager.instance.playMode;
   AdmobBannerSize bannerSize;
@@ -158,7 +159,7 @@ class _HomeState extends State<Home> {
     controller =
         _scaffoldKey.currentState
             .showBottomSheet<Null>((BuildContext context) {
-//          new Timer.periodic(Duration(seconds: 1), (Timer t) => controller.setState((){}));
+         new Timer.periodic(Duration(seconds: 1), (Timer t) => controller.setState((){}));
           return new Stack(
             children: [
               Container(
@@ -1200,7 +1201,16 @@ class _HomeState extends State<Home> {
                   Icons.skip_previous,
                   color: Colors.white,
                 ),
-                onPressed: () => AudioManager.instance.previous()),
+                onPressed: () async {
+                  await AudioManager.instance.previous();
+                  controller.setState(() {
+
+                  });
+
+                  setState(() {
+
+                  });
+                }),
             IconButton(
               onPressed: () async {
                 bool playing = await AudioManager.instance.playOrPause();
@@ -1222,7 +1232,15 @@ class _HomeState extends State<Home> {
                   Icons.skip_next,
                   color: Colors.white,
                 ),
-                onPressed: () => AudioManager.instance.next()),
+                onPressed: () async {
+                  await AudioManager.instance.next();
+                  controller.setState(() {
+
+                  });
+                  setState(() {
+
+                  });
+                }),
             IconButton(
                 icon: Icon(
                   Icons.stop,
